@@ -1,0 +1,58 @@
+.Accordion{
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.Accordion ..double-select{
+margin-bottom: 20px;
+}
+.Accord{
+    background-color: black;
+    margin: auto;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    
+    
+    color: white;
+}
+.main{
+    background-color: orange;
+    margin-bottom: 10px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+.answer{
+    color: white;
+}
+.main h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+.double-select{
+    width: 50%;
+    background-color: black;
+    padding: 10px 30px;
+    text-align: center;
+    color: white;
+}
+.double-select:hover{
+ background-color: brown;
+}
+.main span{
+    color: cyan;
+    font-size: 16px;
+    font-weight: 600;
+}
+.answer-two{
+    background-color: goldenrod;
+    padding: 20px;
+}
