@@ -1,58 +1,118 @@
-.Accordion{
+/* General Styles */
+.Accordion {
     width: 100%;
     margin: auto;
-    align-items: center;
-    justify-content: center;
     display: flex;
     flex-direction: column;
-}
-.Accordion ..double-select{
-margin-bottom: 20px;
-}
-.Accord{
-    background-color: black;
-    margin: auto;
-    width: 60%;
     align-items: center;
     justify-content: center;
-    
-    
-    color: white;
+    padding: 20px;
 }
-.main{
+
+/* Ensuring margin-bottom */
+.Accordion .double-select {
+    margin-bottom: 20px;
+}
+
+/* Accordion Container */
+.Accord {
+    background-color: black;
+    width: 60%;
+    max-width: 800px; /* Prevents it from being too wide on larger screens */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Main Section */
+.main {
     background-color: orange;
     margin-bottom: 10px;
     width: 100%;
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 10px 40px;
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
 }
-.answer{
+
+/* Answer Section */
+.answer {
     color: white;
 }
-.main h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+/* Main Heading */
+.main h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-.double-select{
+/* Double Select Button */
+.double-select {
     width: 50%;
+    max-width: 400px; /* Prevents it from being too wide */
     background-color: black;
     padding: 10px 30px;
     text-align: center;
     color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
 }
-.double-select:hover{
- background-color: brown;
+
+.double-select:hover {
+    background-color: brown;
 }
-.main span{
+
+/* Span Styles */
+.main span {
     color: cyan;
     font-size: 16px;
     font-weight: 600;
 }
-.answer-two{
+
+/* Answer Container */
+.answer-two {
     background-color: goldenrod;
     padding: 20px;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Accord {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .main span {
+        font-size: 14px;
+    }
+
+    .double-select {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .Accord {
+        width: 95%;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .double-select {
+        width: 100%;
+    }
+
+    .main span {
+        font-size: 12px;
+    }
 }
